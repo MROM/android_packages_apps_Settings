@@ -689,7 +689,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Лицензии открытого ПО"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"При загрузке лицензий возникла неполадка."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Идет загрузка…"</string>
-    <string name="settings_cmlicense_activity_title">Лицензии CyanogenMod</string>
+    <string name="settings_cmlicense_activity_title">Лицензии MROM</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Сведения о безопасности"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Сведения о безопасности"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Телефон не подключен к службе передачи данных. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере, подключенном к Интернету."</string>
@@ -723,7 +723,6 @@
     <string name="lockpattern_settings_enable_title" msgid="6920616873671115281">"Запрашивать ключ"</string>
     <string name="lockpattern_settings_enable_summary" msgid="1165707416664252167">"Использовать графический ключ для защиты телефона"</string>
     <string name="lockpattern_settings_enable_visible_pattern_title" msgid="104851667540971729">"Показывать ключ"</string>
-    <string name="lockpattern_settings_enable_error_path_title">Показывать ошибки</string>
     <string name="lockpattern_settings_enable_tactile_feedback_title" msgid="972174133075372341">"Включить виброотклик"</string>
     <string name="lockpattern_settings_choose_lock_pattern" msgid="1652352830005653447">"Установить ключ"</string>
     <string name="lockpattern_settings_change_lock_pattern" msgid="1123908306116495545">"Изменить ключ"</string>
@@ -1192,7 +1191,7 @@
 	
     <string name="cpu_info">Информация о ЦП</string>
     <string name="mem_info">Память (доступно/всего)</string>
-    <string name="mod_version">Версия CyanogenMod</string>
+    <string name="mod_version">Версия MROM</string>
     <string name="mod_version_default">Неизвестно</string>
     <string name="build_date">Дата сборки</string>
 
@@ -1273,7 +1272,7 @@
     <string name="ok">ОК</string>
     <string name="widget_count">виджетов: %d</string>
 
-    <string name="cm_settings_title">Настройки CyanogenMod</string>
+    <string name="cm_settings_title">Настройки MROM</string>
     <string name="device_settings_title">Настройки устройства</string>
 
     <!-- Setting checkbox title for displaying USB debugging notification -->

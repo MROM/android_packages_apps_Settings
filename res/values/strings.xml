@@ -1324,9 +1324,9 @@
     <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
     <string name="storage_settings_summary" product="default">Unmount SD card, view available storage</string>
     <!-- Do not translate. About phone, status item title -->
-    <string name="status_imei" translatable="false">IMEI</string>
+    <string name="status_imei">IMEI</string>
     <!-- Do not translate. About phone, status item title -->
-    <string name="status_imei_sv" translatable="false">IMEI SV</string>
+    <string name="status_imei_sv">IMEI SV</string>
     <!-- About phone, status item title.  The phone number of the current device.-->
     <string name="status_number">My phone number</string>
     <!-- About phone, status item title.  The phone MIN number of the current device.-->
@@ -1657,7 +1657,7 @@
     <!-- About phone settings screen, Open source license dialog title until license is fully loaded -->
     <string name="settings_license_activity_loading">Loading\u2026</string>
     <!-- About phone settings, CM Legal information setting option name and title of dialog box holding license info -->
-    <string name="settings_cmlicense_activity_title">CyanogenMod licenses</string>
+    <string name="settings_cmlicense_activity_title">MROM licenses</string>
 
     <!-- About phone settings, Safety Legal information setting option name and title of dialog box holding safety legal info -->
     <string name="settings_safetylegal_title">Safety information</string>
@@ -3052,7 +3052,7 @@ found in the list of installed applications.</string>
     <!-- Widget Picker -->
     <string name="widget_count">(%d widgets)</string>
 
-    <string name="cm_settings_title">CyanogenMod settings</string>
+    <string name="cm_settings_title">MROM settings</string>
     <string name="device_settings_title">Device settings</string>
 
     <string name="wimax_settings">4G settings</string>
