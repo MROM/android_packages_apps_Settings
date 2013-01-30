@@ -70,11 +70,6 @@ public class ChangeLog extends Fragment {
             }
         }
 
-        if (TextUtils.isEmpty(data)) {
-            showErrorAndFinish();
-            return;
-        }
-
         inputReader = null;
         try {
             data = new StringBuilder(2048);
