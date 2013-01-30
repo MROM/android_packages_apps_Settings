@@ -58,54 +58,10 @@ public class AnonymousStats extends SettingsPreferenceFragment
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getPreferenceManager() != null) {
-            addPreferencesFromResource(R.xml.anonymous_stats);
-            PreferenceScreen prefSet = getPreferenceScreen();
-            mPrefs = getActivity().getSharedPreferences("CMStats", 0);
-            mEnableReporting = (CheckBoxPreference) prefSet.findPreference(ANONYMOUS_OPT_IN);
-            mViewStats = (Preference) prefSet.findPreference(VIEW_STATS);
-            boolean firstBoot = mPrefs.getBoolean(ANONYMOUS_FIRST_BOOT, true);
-            if (mEnableReporting.isChecked() && firstBoot) {
-                mPrefs.edit().putBoolean(ANONYMOUS_FIRST_BOOT, false).apply();
-                ReportingServiceManager.launchService(getActivity());
-            }
-            NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            nm.cancel(1);
-        }
     }
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mEnableReporting) {
-            if (mEnableReporting.isChecked()) {
-                // Display the confirmation dialog
-                mOkClicked = false;
-                if (mOkDialog != null) {
-                    mOkDialog.dismiss();
-                    mOkDialog = null;
-                }
-                mOkDialog = new AlertDialog.Builder(getActivity()).setMessage(
-                        getActivity().getResources().getString(R.string.anonymous_statistics_warning))
-                        .setTitle(R.string.anonymous_statistics_warning_title)
-                        .setIconAttribute(android.R.attr.alertDialogIcon)
-                        .setPositiveButton(android.R.string.yes, this)
-                        .setNeutralButton(getString(R.string.anonymous_learn_more), this)
-                        .setNegativeButton(android.R.string.no, this)
-                        .show();
-                mOkDialog.setOnDismissListener(this);
-            } else {
-                // Disable reporting
-                mPrefs.edit().putBoolean(ANONYMOUS_OPT_IN, false).apply();
-            }
-        } else if (preference == mViewStats) {
-            // Display the stats page
-            Uri uri = Uri.parse("http://stats.cyanogenmod.com");
-            startActivity(new Intent(Intent.ACTION_VIEW, uri));
-        } else {
-            // If we didn't handle it, let preferences handle it.
-            return super.onPreferenceTreeClick(preferenceScreen, preference);
-        }
         return true;
     }
 
@@ -116,23 +72,10 @@ public class AnonymousStats extends SettingsPreferenceFragment
 
     @Override
     public void onDismiss(DialogInterface dialog) {
-        if (!mOkClicked) {
-            mEnableReporting.setChecked(false);
-        }
     }
 
     @Override
     public void onClick(DialogInterface dialog, int which) {
-        if (which == DialogInterface.BUTTON_POSITIVE) {
-            mOkClicked = true;
-            mPrefs.edit().putBoolean(ANONYMOUS_OPT_IN, true).apply();
-            ReportingServiceManager.launchService(getActivity());
-        } else if (which == DialogInterface.BUTTON_NEGATIVE){
-            mEnableReporting.setChecked(false);
-        } else {
-            Uri uri = Uri.parse("http://www.cyanogenmod.com/blog/cmstats-what-it-is-and-why-you-should-opt-in");
-            startActivity(new Intent(Intent.ACTION_VIEW, uri));
-        }
     }
 
 }
