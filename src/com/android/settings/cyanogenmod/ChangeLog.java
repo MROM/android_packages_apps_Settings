@@ -72,7 +72,6 @@ public class ChangeLog extends Fragment {
 
         inputReader = null;
         try {
-            data = new StringBuilder(2048);
             char tmp[] = new char[2048];
             int numRead;
             inputReader = new FileReader(CHANGELOG_PATH);
