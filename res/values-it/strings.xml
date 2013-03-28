@@ -71,7 +71,6 @@
     <string name="small_font" msgid="2295331917424072635">"Piccole"</string>
     <string name="medium_font" msgid="2068475425515133701">"Medie"</string>
     <string name="large_font" msgid="599055175160971446">"Grandi"</string>
-    <string name="font_size_preview_text">"Quel fez sghembo copre davanti"</string>
     <string name="font_size_save" msgid="3450855718056759095">"OK"</string>
     <string name="sdcard_setting" product="nosdcard" msgid="8281011784066476192">"Archivio USB"</string>
     <string name="sdcard_setting" product="default" msgid="5922637503871474866">"Scheda SD"</string>
@@ -167,14 +166,13 @@
     <string name="bluetooth_phonebook_request" msgid="457033227379858269">"Richiesta rubrica"</string>
     <string name="bluetooth_pb_acceptance_dialog_text" msgid="6555508756987053866">"%1$s desidera accedere ai tuoi contatti e alla tua cronologia chiamate. Consentire l\'accesso a %2$s?"</string>
     <string name="bluetooth_pb_remember_choice" msgid="2901499974259177202">"Non chiedermelo più"</string>
-    <string name="bluetooth_mas_request">"Richiesta di accesso ai messaggi"</string>
-    <string name="bluetooth_mas_acceptance_dialog_text">%1$s vorrebbe accedere ai tuoi messaggi. Consentire l\'accesso a %2$s?</string>
-    <string name="bluetooth_mas_remember_choice">Non chiedere più</string>
-<string name="date_and_time" msgid="4114084177056654663">"Impostazioni data e ora"</string>
+    <string name="date_and_time" msgid="4114084177056654663">"Impostazioni data e ora"</string>
     <string name="choose_timezone" msgid="1362834506479536274">"Scegli il fuso orario"</string>
     <string name="normal_date_format" msgid="7636406984925498359">"Regionale (<xliff:g id="DATE">%s</xliff:g>)"</string>
     <string name="display_preview_label" msgid="1127597250917274792">"Anteprima:"</string>
     <string name="display_font_size_label" msgid="8941851418397475389">"Dimensioni carattere:"</string>
+    <!-- no translation found for intent_sender_data_label (6332324780477289261) -->
+    <skip />
     <string name="intent_sender_sendbroadcast_text" msgid="1415735148895872715">"Invia <xliff:g id="BROADCAST">broadcast</xliff:g>"</string>
     <string name="intent_sender_action_label" msgid="616458370005452389">"<xliff:g id="ACTION">Action</xliff:g>:"</string>
     <string name="intent_sender_startactivity_text" msgid="5080516029580421895">"Inizia <xliff:g id="ACTIVITY">activity</xliff:g>"</string>
@@ -622,11 +620,6 @@
     <string name="wifi_setting_frequency_band_title" msgid="7493768705046080060">"Banda di frequenza Wi-Fi"</string>
     <string name="wifi_setting_frequency_band_summary" msgid="3250740757118009784">"Specifica campo di frequenza di funzionamento"</string>
     <string name="wifi_setting_frequency_band_error" msgid="837281974489794378">"Errore di impostazione della banda di frequenza."</string>
-    <string name="wifi_setting_countrycode_title">Codice regione Wi-Fi</string>
-    <string name="wifi_setting_countrycode_summary">Specifica il codice regione per il Wi-Fi</string>
-    <string name="wifi_setting_countrycode_error">Problema nell\'impostazione del codice regione.</string>
-    <string name="wifi_setting_priority_title">Priorità Wi-Fi</string>
-    <string name="wifi_setting_priority_summary">Specifica la priorità delle reti Wi-Fi</string>
     <string name="wifi_advanced_mac_address_title" msgid="6571335466330978393">"Indirizzo MAC"</string>
     <string name="wifi_advanced_ip_address_title" msgid="6215297094363164846">"Indirizzo IP"</string>
     <string name="wifi_advanced_settings_label" msgid="3654366894867838338">"Impostazioni IP"</string>
@@ -686,8 +679,6 @@
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Suoni alla pressione"</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Suono di blocco schermo"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Vibra alla pressione"</string>
-    <string name="volume_adjust_sounds_enable_title">Suono regolazione volume</string>
-    <string name="volume_adjust_sounds_enable_summary">Riproduci un suono durante la regolazione del volume con i tasti volume</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Eliminazione rumori"</string>
     <string name="volume_media_description" msgid="7949355934788807863">"Musica, video, giochi e altri contenuti multimediali"</string>
     <string name="volume_ring_description" msgid="5936851631698298989">"Suoneria e notifiche"</string>
@@ -1158,9 +1149,13 @@
     <string name="cached" msgid="1059590879740175019">"Processo in background memorizzato nella cache"</string>
     <string name="no_running_services" msgid="2059536495597645347">"Niente in esecuzione."</string>
     <string name="service_started_by_app" msgid="818675099014723551">"Avviato dall\'applicazione."</string>
+    <!-- no translation found for service_client_name (4037193625611815517) -->
+    <skip />
     <string name="service_background_processes" msgid="6844156253576174488">"<xliff:g id="MEMORY">%1$s</xliff:g> liberi"</string>
     <string name="service_foreground_processes" msgid="7583975676795574276">"<xliff:g id="MEMORY">%1$s</xliff:g> usati"</string>
     <string name="memory" msgid="6609961111091483458">"RAM"</string>
+    <!-- no translation found for service_process_name (4098932168654826656) -->
+    <skip />
     <string name="running_process_item_user_label" msgid="3129887865552025943">"Utente: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="running_process_item_removed_user_label" msgid="8250168004291472959">"Utente rimosso"</string>
     <string name="running_processes_item_description_s_s" msgid="5790575965282023145">"<xliff:g id="NUMPROCESS">%1$d</xliff:g> processo e <xliff:g id="NUMSERVICES">%2$d</xliff:g> servizio"</string>
@@ -1287,13 +1282,6 @@
     <string name="enforce_read_external_summary" product="default" msgid="2750027486786530064">"Le app devono richiedere l\'autorizzazione per leggere la scheda SD"</string>
     <string name="enforce_read_external_confirm_title" product="default" msgid="273220585729800783">"Proteggere la scheda SD?"</string>
     <string name="enforce_read_external_confirm_message" product="default" msgid="3858482712337574407">"Quando la scheda SD è protetta, le applicazioni devono richiedere l\'autorizzazione per leggere i dati dalla memoria esterna."\n\n"Alcune applicazioni potrebbero non funzionare fino all\'aggiornamento da parte dei relativi sviluppatori."</string>
-    <string name="root_access">"Accesso root"</string>
-    <string name="root_access_warning_title">"Permetti l\'accesso come root?"</string>
-    <string name="root_access_warning_message">"Permettere alle applicazioni di richiedere i permessi di root è estremamente pericoloso e potrebbe compromettere la sicurezza del sistema!"</string>
-    <string name="root_access_none">"Disattivo"</string>
-    <string name="root_access_apps">"Solo applicazioni"</string>
-    <string name="root_access_adb">"Solo ADB"</string>
-    <string name="root_access_all">"Applicazioni e ADB"</string>
     <string name="gadget_picker_title" msgid="98374951396755811">"Scegli gadget"</string>
     <string name="widget_picker_title" msgid="9130684134213467557">"Scegli widget"</string>
     <string name="allow_bind_app_widget_activity_allow_bind_title" msgid="2538303018392590627">"Creare il widget e consentire l\'accesso?"</string>
@@ -1324,7 +1312,6 @@
     <string name="accessibility_toggle_screen_magnification_auto_update_preference_title" msgid="7218498768415430963">"Aggiorn. autom. ingrandim. schermo"</string>
     <string name="accessibility_toggle_screen_magnification_auto_update_preference_summary" msgid="4392059334816220155">"Aggiorna ingrandimento schermo per transizioni app"</string>
     <string name="accessibility_power_button_ends_call_prerefence_title" msgid="6673851944175874235">"Tasto ON/OFF termina chiamata"</string>
-    <string name="accessibility_home_button_answers_call_prerefence_title">Il pulsante Home risponde alla chiamata</string>
     <string name="accessibility_toggle_speak_password_preference_title" msgid="5986628515113204844">"Pronuncia le password"</string>
     <string name="accessibility_long_press_timeout_preference_title" msgid="6708467774619266508">"Ritardo tocco e pressione"</string>
     <string name="accessibility_toggle_script_injection_preference_title" msgid="7950932054266694403">"Migliora l\'accessibilità web"</string>
@@ -1360,6 +1347,8 @@
     <string name="battery_stats_wifi_running_label" msgid="3093545080361658269">"Wi-Fi"</string>
     <string name="battery_stats_wake_lock_label" msgid="1908942681902324095">"Attivo"</string>
     <string name="battery_stats_phone_signal_label" msgid="4137799310329041341">"Segnale rete mobile"</string>
+    <!-- no translation found for battery_stats_last_duration (1535831453827905957) -->
+    <skip />
     <string name="awake" msgid="387122265874485088">"Tempo di attività dispositivo"</string>
     <string name="wifi_on_time" msgid="6310209835617490616">"Tempo accensione Wi-Fi"</string>
     <string name="bluetooth_on_time" msgid="6157799524996162271">"Tempo accensione Wi-Fi"</string>
@@ -1541,7 +1530,6 @@
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Notifiche"</string>
     <string name="sound_category_call_ringtone_vibrate_title" msgid="1543777228646645163">"Suoneria e vibrazione chiamata"</string>
     <string name="sound_category_system_title" msgid="1480844520622721141">"Sistema"</string>
-    <string name="headset_category_title">"Auricolari"</string>
     <string name="wifi_setup_title" msgid="661074868726906436">"Impostazione Wi-Fi"</string>
     <string name="wifi_setup_title_editing_network" msgid="7304321031985059969">"Connetti alla rete Wi-Fi <xliff:g id="NETWORK_NAME">%s</xliff:g>"</string>
     <string name="wifi_setup_title_connecting_network" msgid="3747859666621319757">"Connessione alla rete Wi-Fi <xliff:g id="NETWORK_NAME">%s</xliff:g>..."</string>
@@ -1611,6 +1599,8 @@
     <string name="remove_account_failed" product="tablet" msgid="3086620478225952725">"Questo account è richiesto da alcune applicazioni. Puoi rimuoverlo solo ripristinando le impostazioni predefinite di fabbrica del tablet (questa operazione elimina tutti i dati personali) in Impostazioni &gt; Backup e ripristino."</string>
     <string name="remove_account_failed" product="default" msgid="6217238709175617517">"Questo account è richiesto da alcune applicazioni. Puoi rimuoverlo solo ripristinando le impostazioni predefinite di fabbrica del telefono (questa operazione elimina tutti i dati personali) in Impostazioni &gt; Backup e ripristino."</string>
     <string name="provider_label" msgid="7724593781904508866">"Sottoscrizioni push"</string>
+    <!-- no translation found for sync_item_title (4782834606909853006) -->
+    <skip />
     <string name="cant_sync_dialog_title" msgid="8923508322291625282">"Impossibile sincronizzare manualmente"</string>
     <string name="cant_sync_dialog_message" msgid="1938380442159016449">"Al momento la sincronizzazione di questo elemento non è attiva. Per modificare questa impostazione, attiva temporaneamente i dati in background e la sincronizzazione automatica."</string>
     <string name="wimax_settings" msgid="1574837328738396794">"Impostazioni 4G"</string>
