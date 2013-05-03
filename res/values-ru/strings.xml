@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2007 The Android Open Source Project
-     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,10 +12,8 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="yes" msgid="4676390750360727396">"Да"</string>
     <string name="no" msgid="6731231425810196216">"Нет"</string>
     <string name="create" msgid="3578857613172647409">"Создать"</string>
@@ -167,9 +164,6 @@
     <string name="bluetooth_phonebook_request" msgid="457033227379858269">"Запрос телефонной книги"</string>
     <string name="bluetooth_pb_acceptance_dialog_text" msgid="6555508756987053866">"Устройство \"%1$s\" пытается получить доступ к вашим контактам и журналу вызовов. Разрешить доступ для %2$s?"</string>
     <string name="bluetooth_pb_remember_choice" msgid="2901499974259177202">"Больше не спрашивать"</string>
-    <string name="bluetooth_mas_request">Запрос доступа к сообщениям</string>
-    <string name="bluetooth_mas_acceptance_dialog_text">%1$s запрашивает доступ к сообщениям. Предоставить доступ %2$s?</string>
-    <string name="bluetooth_mas_remember_choice">Больше не спрашивать</string>
     <string name="date_and_time" msgid="4114084177056654663">"Настройки даты и времени"</string>
     <string name="choose_timezone" msgid="1362834506479536274">"Выбрать часовой пояс"</string>
     <string name="normal_date_format" msgid="7636406984925498359">"По умолчанию (<xliff:g id="DATE">%s</xliff:g>)"</string>
@@ -624,11 +618,6 @@
     <string name="wifi_setting_frequency_band_title" msgid="7493768705046080060">"Полоса частот Wi-Fi"</string>
     <string name="wifi_setting_frequency_band_summary" msgid="3250740757118009784">"Укажите рабочий диапазон частот"</string>
     <string name="wifi_setting_frequency_band_error" msgid="837281974489794378">"При настройке полосы частот возникла неполадка."</string>
-    <string name="wifi_setting_countrycode_title">Код региона Wi-Fi</string>
-    <string name="wifi_setting_countrycode_summary">Укажите код региона Wi-Fi</string>
-    <string name="wifi_setting_countrycode_error">При настройке кода региона Wi-Fi возникла неполадка.</string>
-    <string name="wifi_setting_priority_title">Приоритет Wi-Fi</string>
-    <string name="wifi_setting_priority_summary">Установка приоритета Wi-Fi сетей</string>
     <string name="wifi_advanced_mac_address_title" msgid="6571335466330978393">"MAC-адрес"</string>
     <string name="wifi_advanced_ip_address_title" msgid="6215297094363164846">"IP-адрес"</string>
     <string name="wifi_advanced_settings_label" msgid="3654366894867838338">"Настройки IP"</string>
@@ -1320,7 +1309,6 @@
     <string name="accessibility_toggle_screen_magnification_auto_update_preference_title" msgid="7218498768415430963">"Сохранять масштаб"</string>
     <string name="accessibility_toggle_screen_magnification_auto_update_preference_summary" msgid="4392059334816220155">"Сохранять масштаб при переходе между приложениями"</string>
     <string name="accessibility_power_button_ends_call_prerefence_title" msgid="6673851944175874235">"Кнопка питания завершает вызов"</string>
-    <string name="accessibility_home_button_answers_call_prerefence_title">Отвечать на вызов кнопкой \"Домой\"</string>
     <string name="accessibility_toggle_speak_password_preference_title" msgid="5986628515113204844">"Озвучивать пароли"</string>
     <string name="accessibility_long_press_timeout_preference_title" msgid="6708467774619266508">"Задержка при нажатии и удержании"</string>
     <string name="accessibility_toggle_script_injection_preference_title" msgid="7950932054266694403">"Специальные веб-скрипты"</string>
@@ -1539,7 +1527,6 @@
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Оповещения"</string>
     <string name="sound_category_call_ringtone_vibrate_title" msgid="1543777228646645163">"Вибросигнал и рингтон"</string>
     <string name="sound_category_system_title" msgid="1480844520622721141">"Системные уведомления"</string>
-    <string name="headset_category_title">Наушники</string>
     <string name="wifi_setup_title" msgid="661074868726906436">"Настройки Wi-Fi"</string>
     <string name="wifi_setup_title_editing_network" msgid="7304321031985059969">"Подключение к сети Wi-Fi <xliff:g id="NETWORK_NAME">%s</xliff:g>"</string>
     <string name="wifi_setup_title_connecting_network" msgid="3747859666621319757">"Подключение к сети Wi-Fi: <xliff:g id="NETWORK_NAME">%s</xliff:g>"</string>

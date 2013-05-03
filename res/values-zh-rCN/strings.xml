@@ -1833,7 +1833,6 @@
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"小区广播"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"请选择要显示的紧急消息类型。"</string>
 
-
     <!-- CYANOGENMOD ADDITIONS START -->
 
     <string name="ok">确定</string>
