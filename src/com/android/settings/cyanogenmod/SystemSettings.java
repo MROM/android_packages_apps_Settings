@@ -134,11 +134,11 @@ public class SystemSettings extends SettingsPreferenceFragment  implements
 
         // Pie controls
         mPieControl = (PreferenceScreen) findPreference(KEY_PIE_CONTROL);
-        /*if (mPieControl != null && removeNavbar) {
+        if (mPieControl != null && removeNavbar) {
             // Remove on devices without a navbar to start with
             prefScreen.removePreference(mPieControl);
             mPieControl = null;
-        }*/
+        }
 
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
