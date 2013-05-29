@@ -18,7 +18,6 @@ package com.android.settings.cmstats;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -32,25 +31,26 @@ import android.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class AnonymousStats extends SettingsPreferenceFragment
-        implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
+public class AnonymousStats extends SettingsPreferenceFragment implements
+        DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
         Preference.OnPreferenceChangeListener {
-
     private static final String VIEW_STATS = "pref_view_stats";
 
-    protected static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
-
-    protected static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
+    private static final String PREF_FILE_NAME = "CMStats";
+    /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
+    /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 
     private CheckBoxPreference mEnableReporting;
-
     private Preference mViewStats;
 
     private Dialog mOkDialog;
-
     private boolean mOkClicked;
 
     private SharedPreferences mPrefs;
+
+    public static SharedPreferences getPreferences(Context context) {
+        return context.getSharedPreferences(PREF_FILE_NAME, 0);
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,7 +58,6 @@ public class AnonymousStats extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return true;
     }
 
     @Override
@@ -73,5 +72,4 @@ public class AnonymousStats extends SettingsPreferenceFragment
     @Override
     public void onClick(DialogInterface dialog, int which) {
     }
-
 }
