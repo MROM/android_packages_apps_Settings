@@ -58,6 +58,7 @@ public class AnonymousStats extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+	return true;
     }
 
     @Override
